@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 //Rrequest routing logic
 //HTTP Handlers
 //HTTP Requests are mapped with HTTP handlers
-app.get("/", (req, res)=>{res.sendFile('home.html')});
+app.get("/", (req, res)=>{res.sendFile('./home.html')});
 app.get("/hello",(req, res)=>{res.send("Welcome");});
 app.get("/aboutus",(req,res)=>{res.send("Transflower Learning Pvt. Ltd.")});
 app.get("/contactus",(req,res)=>{res.send("ravi.tambade@transflower.in")});
